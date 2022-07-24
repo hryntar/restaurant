@@ -1,0 +1,691 @@
+@import url("https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Montserrat:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 100%;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+body {
+  height: 100%;
+  background-color: #333333;
+}
+
+html {
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.intro {
+  width: 100%;
+  height: 450px;
+  background: url(../img/2redag.png) center no-repeat;
+  background-size: cover;
+}
+.intro__content {
+  padding-top: 120px;
+  margin-left: 370px;
+}
+.intro__title {
+  font-family: "Grand Hotel";
+  font-size: 90.7px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #ffc200;
+}
+.intro__text {
+  width: 100%;
+  font-family: Montserrat;
+  font-size: 20.8px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #ffffff;
+  width: 500px;
+}
+.intro__button {
+  font-family: Montserrat;
+  font-size: 16px;
+  line-height: 2.3;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #333333;
+  width: 170px;
+  height: 36px;
+  background-color: #ffc200;
+  border-radius: 4px;
+  text-align: center;
+  margin-top: 30px;
+  -webkit-transition: color 0.2s linear, background-color 0.2s linear;
+  transition: color 0.2s linear, background-color 0.2s linear;
+}
+
+.intro__button:hover {
+  color: #ffc200;
+  background-color: #303030;
+  border: #ffc200 1px solid;
+  font-size: 15.5px;
+  line-height: 2.3;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.intro__button:active {
+  color: #333333;
+  background-color: #ffc200;
+}
+
+.header {
+  width: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  z-index: 1000;
+}
+.header__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__logo {
+  margin-top: 15px;
+}
+.header__logoimg {
+  width: 140px;
+}
+
+.nav {
+  margin-top: 15px;
+}
+.nav__link {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 15px;
+  font-family: Montserrat;
+  font-size: 20px;
+  line-height: 1.9;
+  font-weight: 400;
+  color: #ffffff;
+  -webkit-transition: color 0.2s linear;
+  transition: color 0.2s linear;
+}
+
+.nav__link:hover {
+  color: #ffc200;
+}
+
+.nav__link:active {
+  color: #ffffff;
+}
+
+.bestseller {
+  background-color: #ffffff;
+}
+.bestseller__content {
+  margin-bottom: -2px;
+}
+.bestseller__toptext {
+  margin-top: 40px;
+}
+.bestseller__title {
+  font-family: "Grand Hotel";
+  font-size: 60px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #333333;
+  text-align: center;
+  margin-top: -40px;
+  padding-top: 50px;
+}
+.bestseller__text {
+  width: 100%;
+  font-family: Montserrat;
+  font-size: 17.8px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #333333;
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto;
+}
+.bestseller__choose {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.item {
+  margin-top: 35px;
+  width: 33.33%;
+  margin-bottom: 0px;
+}
+.item__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 10px;
+}
+.item__title {
+  font-family: "Grand Hotel";
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #333333;
+  text-align: center;
+}
+.item__text {
+  font-family: Montserrat;
+  font-size: 13.9px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #333333;
+  text-align: center;
+}
+.item__itemimage {
+  width: 160px;
+}
+
+.taste {
+  background: url(../img/reeditbg2.png) no-repeat center;
+  background-size: cover;
+}
+.taste__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 40px;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 0px;
+}
+.taste__img {
+  margin-top: 145px;
+  margin-left: 50px;
+}
+.taste__content {
+  margin-top: 150px;
+  min-width: 500px;
+  margin-bottom: 30px;
+  margin-left: 50px;
+}
+.taste__title {
+  font-family: "Grand Hotel";
+  font-size: 75.7px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #ffc200;
+  margin-left: 25px;
+}
+.taste__text {
+  width: 100%;
+  font-family: Montserrat;
+  font-size: 17px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #ffffff;
+  width: 400px;
+  margin-left: 25px;
+}
+.taste__button {
+  font-family: Montserrat;
+  font-size: 16px;
+  line-height: 2.3;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #333333;
+  width: 170px;
+  height: 36px;
+  background-color: #ffc200;
+  border-radius: 4px;
+  text-align: center;
+  margin-top: 30px;
+  -webkit-transition: color 0.2s linear, background-color 0.2s linear;
+  transition: color 0.2s linear, background-color 0.2s linear;
+  margin-left: 25px;
+}
+
+.taste__button:hover {
+  color: #ffc200;
+  background-color: #303030;
+  border: #ffc200 1px solid;
+  font-size: 15.5px;
+  line-height: 2.3;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.taste__button:active {
+  color: #333333;
+  background-color: #ffc200;
+}
+
+.img__taste {
+  width: 250px;
+}
+
+.statistics {
+  background: url(../img/bg3.png) no-repeat center;
+  background-size: cover;
+}
+.statistics__toptext {
+  margin-bottom: 50px;
+  padding-top: 70px;
+}
+.statistics__title {
+  font-family: "Grand Hotel";
+  font-size: 90px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #ffc200;
+  text-align: center;
+}
+.statistics__text {
+  font-family: Montserrat;
+  font-size: 20.7px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.statistics__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-bottom: 50px;
+  max-width: 730px;
+  margin: 0 auto;
+}
+.itemstat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 150px;
+  height: 150px;
+  border: 4px solid #ffffff;
+  border-radius: 50%;
+}
+.itemstat__title {
+  font-family: Montserrat;
+  font-size: 35px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #ffc200;
+}
+.itemstat__text {
+  font-family: Montserrat;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.chicken {
+  background: url(../img/bg4.png) no-repeat center;
+  background-size: cover;
+}
+.chicken__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+}
+.chicken__content {
+  min-width: 500px;
+  margin-top: 50px;
+  padding-bottom: 150px;
+}
+.chicken__title {
+  font-family: "Grand Hotel";
+  font-size: 75.7px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #ffc200;
+  margin-left: 30px;
+}
+.chicken__text {
+  width: 100%;
+  font-family: Montserrat;
+  font-size: 17px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #ffffff;
+  width: 400px;
+  margin-left: 30px;
+}
+.chicken__button {
+  font-family: Montserrat;
+  font-size: 16px;
+  line-height: 2.3;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #333333;
+  width: 170px;
+  height: 36px;
+  background-color: #ffc200;
+  border-radius: 4px;
+  text-align: center;
+  margin-top: 30px;
+  -webkit-transition: color 0.2s linear, background-color 0.2s linear;
+  transition: color 0.2s linear, background-color 0.2s linear;
+  margin-left: 30px;
+}
+.chicken__img {
+  margin-top: 40px;
+  margin-right: 50px;
+}
+
+.chicken__button:hover {
+  color: #ffc200;
+  background-color: #303030;
+  border: #ffc200 1px solid;
+  font-size: 15.5px;
+  line-height: 2.3;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.chicken__button:active {
+  color: #333333;
+  background-color: #ffc200;
+}
+
+.img__chicken {
+  width: 250px;
+}
+
+.quote {
+  background: url(../img/bg6.png);
+  background-size: cover;
+  margin-bottom: -2px;
+}
+.quote__inner {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.quote__text {
+  font-family: Montserrat;
+  font-size: 25.9px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.quote__subtitle {
+  font-family: "Grand Hotel";
+  font-size: 54.2px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #333333;
+  text-align: center;
+}
+
+.subscribe {
+  background: url(../img/bg5.png);
+  background-size: cover;
+}
+.subscribe__inner {
+  padding-bottom: 170px;
+  padding-top: 100px;
+}
+.subscribe__content {
+  max-width: 500px;
+  margin: 0 auto;
+}
+.subscribe__title {
+  font-family: "Grand Hotel";
+  font-size: 75.7px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #333333;
+  text-align: center;
+}
+.subscribe__text {
+  font-family: Montserrat;
+  font-size: 17px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.subscribe__input {
+  margin: 0 auto;
+}
+
+.emailinput {
+  width: 305px;
+  height: 30px;
+  background-color: #f4f4f4;
+  border-radius: 4px 0px 0px 4px;
+  padding-left: 15px;
+  margin-left: 45px;
+  background-color: #fff;
+  border: #ffc200 1px solid;
+}
+
+.emailinput:focus {
+  background-color: #fff;
+  border: #ffc200 1px solid;
+  -webkit-box-shadow: 0px 0px 3px 0.1px #ffc200;
+          box-shadow: 0px 0px 3px 0.1px #ffc200;
+}
+
+.button {
+  width: 100px;
+  height: 30px;
+  background-color: #ffc200;
+  border-radius: 0px 4px 4px 0px;
+  font-family: Montserrat;
+  font-size: 12px;
+  line-height: 0.8;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #333333;
+  margin-left: -5px;
+  -webkit-transition: color 0.2s linear, background-color 0.2s linear;
+  transition: color 0.2s linear, background-color 0.2s linear;
+}
+
+.button:hover {
+  color: #ffc200;
+  background-color: #303030;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.button:active {
+  color: #333333;
+  background-color: #ffc200;
+}
+
+.footer {
+  height: 300px;
+  background-color: #303030;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.footer__column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.info {
+  width: 100%;
+  max-width: 240px;
+  margin-right: 50px;
+}
+.info__title {
+  font-family: Montserrat;
+  font-size: 15px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+.info__text {
+  font-family: Montserrat;
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #ffffff;
+}
+.info__socials {
+  margin-top: 15px;
+}
+
+.soc_icons {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.column {
+  width: 100%;
+  max-width: 120px;
+}
+.column__title {
+  font-family: Montserrat;
+  font-size: 15px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+.column__list {
+  font-family: Montserrat;
+  font-size: 12px;
+  line-height: 1.8;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.column {
+  margin-left: 70px;
+}
+
+.list__link {
+  color: #ffffff;
+}
+
+.list__link:hover {
+  text-decoration: underline;
+}
